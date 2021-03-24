@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+
+.new-account-container {
+    font-family: "Roboto",sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-login-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.account-main-container{
+    display: flex;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-section {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+.left-header{
+    font-family: Slate W01 Bold,Helvetica,Arial,sans-serif!important;
+    font-size: 55px;
+    color: #3c424f;
+    line-height: 80px;
+    margin-bottom: 16px;
+}
+.padding-section{
+    padding: 50px 70px;
+    height: 100%;
+}
+.icon-secton{
+    margin-right: 10px;
+    cursor: pointer;
+}
+/*.yg-info {
+    transform: none;
+    transition: all .4s cubic-bezier(.74,0,.2,1);
+}*/
+.semi-half {
+    overflow-y: scroll;
+}
+.sub-text{
+    margin-bottom: 72px;
+}
+.sub-text-right{
+    margin-bottom: 50px;
+}
+.content {
+    max-width: 700px;
+}
+.address{
+    text-decoration: none;
+    color: #686b77;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.right-section {
+    width: 50%;
+    height: 100%;
+    background-color: #F7FAFD;
+    /*text-align: center;*/
+}
+.form-style{
+    margin-top:15px;
+}
+.label {
+    margin-bottom: 5px;
+    color: #5A5A5A;
+}
+.error-message{
+    /*color: "#f44336";*/
+    color: rgb(244, 67, 54);
+    font-size:'14px';
+    margin-top: 5px;
+}
+
+.button-design:hover {
+  background-color: #3f51b5 !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlay{
+    position: fixed;
+    /*top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    z-index: 9999;
+    background-color: #fff;
 }
